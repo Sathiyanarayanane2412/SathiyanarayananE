@@ -1,0 +1,20 @@
+
+public class Mininmun {
+    static int getMin(int[] arr,int n){
+    int min= Integer.MAX_VALUE;
+    for(int i=0;i<n;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    return min;}
+
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,-1,7,9};
+        int n=arr.length;
+        int minMin=getMin(arr,n);
+        System.out.print(minMin);
+
+    }
+}
+output:-1
