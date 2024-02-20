@@ -1,0 +1,25 @@
+import java.util.*;
+public class AscDes {
+    public static void ascedsc(int[] a,int n){
+        Arrays.sort(a);
+        int firstsum=0;
+        int lastsum=0;
+
+        for(int i=0;i<n/2;i++){
+            firstsum+=a[i];
+            System.out.print(a[i]+" ");
+        }
+        for(int i=n-1;i>=n/2;i--){
+            lastsum+=a[i];
+            System.out.print(a[i]+" ");
+
+        }System.out.println();
+        System.out.println(firstsum);
+        System.out.println(lastsum);
+    }
+    public static void main(String[] args){
+        int[] a={1,3,5,6,7,8,4,2};
+        int n=a.length;
+        ascedsc(a,n);
+    }
+}
